@@ -6,12 +6,13 @@ void main() {
     MaterialApp(
       home: Scaffold(
         appBar: AppBar(
-          title: const Text(
-                  'I am rich'),
+          title: const Center(
+            child: Text('I am rich'),
+          ),
           backgroundColor: Colors.amber[900],
         ),
         body:const Image(
-            image:NetworkImage('https://www.w3schools.com/css/img_lights.jpg'
+            image:AssetImage('images/Screenshot_20221116_122730.png'
            ),
         ),
     ),
