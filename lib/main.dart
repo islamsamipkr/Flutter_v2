@@ -15,6 +15,7 @@ void main() {
             image:AssetImage('images/Screenshot_20221116_122730.png'
            ),
         ),
+        backgroundColor: Colors.black,
     ),
     ),
   );
