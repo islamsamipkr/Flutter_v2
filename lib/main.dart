@@ -17,10 +17,16 @@ void main() {
               child: Text('Ghotok')),
         ),
         backgroundColor: Colors.blue,
-          body: Container(
-            child: Center(
-              child: Text("The name of this app is called Ghotok")
-            )
+          body: SafeArea(
+            child: Container(
+              height: 100.0,
+              width:100.0,
+              margin:EdgeInsets.all(20.0),
+              child: Center(
+                child: Text("The name of this app is called Ghotok")
+              ),
+              color:Colors.tealAccent
+            ),
           ),
         floatingActionButton: FloatingActionButton(
           child: Text('Click on it'),
