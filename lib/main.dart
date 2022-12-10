@@ -22,7 +22,7 @@ void main() {
                 const Text('Sami Islam',
                 style:TextStyle(
                   fontFamily: 'Pacifico',
-                  fontSize:40.0,
+                  fontSize:35.0,
                   color:Colors.white,
                     fontWeight:FontWeight.bold,
                 )
@@ -39,16 +39,19 @@ void main() {
                 )
                 ),
                 Container(
+                  padding: EdgeInsets.all(10.0),
+                  color:Colors.white,
+                  margin:EdgeInsets.symmetric(vertical: 10.0,horizontal: 25.0),
                   child:Row(
                     children: const <Widget>[
                       Icon(
                           Icons.phone,
-                          color: Colors.white,
+                          color: Colors.teal,
                       ),
                       SizedBox(
                         width:10.0,
                       ),
-                      Text('+14388881882',
+                      Text('+1 438 888 1882',
                         style:TextStyle(
                           color: Colors.teal,
                           fontFamily: 'Source Sans Pro',
@@ -57,7 +60,30 @@ void main() {
                       )
                     ],
                   )
+                ),
+                Container(
+                  color:Colors.white,
+                  padding:EdgeInsets.all(10.0),
+                  margin:EdgeInsets.symmetric(vertical: 10.0,horizontal: 25.0),
+                  child:Row(
+                    children: <Widget>[
+                      Icon(
+                          Icons.email,
+                      color:Colors.teal),
+                    Text(
+                      ' islam.samipkr@gmail.com',
+                      style:TextStyle(
+                        fontSize:20.0,
+                        color:Colors.teal,
+                        fontFamily: 'Source Sans Pro'),
+                      )
+
+              ],
+
+                  )
+
                 )
+
             ],
           ),
           ),
