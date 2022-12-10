@@ -41,48 +41,39 @@ void main() {
                 Card(
                   color:Colors.white,
                   margin:const EdgeInsets.symmetric(vertical: 10.0,horizontal: 25.0),
-                  child:Padding(
-                      padding: EdgeInsets.all(25.0),
-                      child:Row(
-                        children: <Widget>[
-                          const Icon(
-                              Icons.phone,
-                              color:Colors.teal),
-                          const Text(
-                            '+1 438 888 1882',
-                            style:TextStyle(
-                                fontSize:20.0,
-                                color:Colors.teal,
-                                fontFamily: 'Source Sans Pro'),
-                          )
-
-                        ],
-
+                  child:ListTile(
+                    leading: Icon(
+                      Icons.email,
+                      color:Colors.teal,
+                    ),
+                    title:Text(
+                      'islam.samipkr@gmail.com',
+                      style:TextStyle(
+                        fontSize:20.0,
+                        color:Colors.teal,
+                        fontFamily: 'Source Sans Pro',
                       )
+                    )
                   ),
                 ),
                 Card(
                   color:Colors.white,
                   margin:const EdgeInsets.symmetric(vertical: 10.0,horizontal: 25.0),
-                  child:Padding(
-                    padding: EdgeInsets.all(25.0),
-                      child:Row(
-                    children: <Widget>[
-                      const Icon(
-                          Icons.email,
-                      color:Colors.teal),
-                    const Text(
-                      ' islam.samipkr@gmail.com',
-                      style:TextStyle(
-                        fontSize:20.0,
-                        color:Colors.teal,
-                        fontFamily: 'Source Sans Pro'),
-                      )
-
-              ],
+                  child:ListTile(
+                    leading:Icon(
+                    Icons.phone,
+                      color: Colors.teal,
+                    ),
+                        title:Text(
+                      '+1 438 888 1882',
+                  style:TextStyle(
+                    fontSize: 20.0,
+                    color:Colors.teal,
+                    fontFamily:'Source Sans Pro'
 
                   )
-                ),
+                    )
+                  ),
                 )
 
             ],
