@@ -38,39 +38,40 @@ void main() {
 
                 )
                 ),
-                Container(
-                  padding: EdgeInsets.all(10.0),
+                Card(
                   color:Colors.white,
-                  margin:EdgeInsets.symmetric(vertical: 10.0,horizontal: 25.0),
-                  child:Row(
-                    children: const <Widget>[
-                      Icon(
-                          Icons.phone,
-                          color: Colors.teal,
-                      ),
-                      SizedBox(
-                        width:10.0,
-                      ),
-                      Text('+1 438 888 1882',
-                        style:TextStyle(
-                          color: Colors.teal,
-                          fontFamily: 'Source Sans Pro',
-                          fontSize:20.0,
-                        )
+                  margin:const EdgeInsets.symmetric(vertical: 10.0,horizontal: 25.0),
+                  child:Padding(
+                      padding: EdgeInsets.all(25.0),
+                      child:Row(
+                        children: <Widget>[
+                          const Icon(
+                              Icons.phone,
+                              color:Colors.teal),
+                          const Text(
+                            '+1 438 888 1882',
+                            style:TextStyle(
+                                fontSize:20.0,
+                                color:Colors.teal,
+                                fontFamily: 'Source Sans Pro'),
+                          )
+
+                        ],
+
                       )
-                    ],
-                  )
+                  ),
                 ),
-                Container(
+                Card(
                   color:Colors.white,
-                  padding:EdgeInsets.all(10.0),
-                  margin:EdgeInsets.symmetric(vertical: 10.0,horizontal: 25.0),
-                  child:Row(
+                  margin:const EdgeInsets.symmetric(vertical: 10.0,horizontal: 25.0),
+                  child:Padding(
+                    padding: EdgeInsets.all(25.0),
+                      child:Row(
                     children: <Widget>[
-                      Icon(
+                      const Icon(
                           Icons.email,
                       color:Colors.teal),
-                    Text(
+                    const Text(
                       ' islam.samipkr@gmail.com',
                       style:TextStyle(
                         fontSize:20.0,
@@ -81,7 +82,7 @@ void main() {
               ],
 
                   )
-
+                ),
                 )
 
             ],
